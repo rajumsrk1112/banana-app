@@ -19,3 +19,13 @@ body {
     margin-block-end: 0px;
     border: 1px solid var(--secondary-color);
 }
+
+.container {
+    text-align: center;
+}
+
+#message {
+    width:50%;
+    padding: 1rem;
+    border: 1px solid black;
+}

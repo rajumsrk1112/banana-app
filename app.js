@@ -1,17 +1,10 @@
-/*console.log("Script is working OMG!");
+let getMessageButton=document.getElementById("get-message");
 
-let firstName=prompt("Enter your first name");
+let inputText=document.querySelector("#message");
 
-let lastName=prompt("Enter your last name");
+getMessageButton.addEventListener("click",()=>{
+    console.log(inputText.value);
+})
 
-function greetUser(fName,lName)
-{
-    alert("Hello "+fName+" "+lName+"!");
-}
+// console.log(inputText.innerHTML);
 
-greetUser(firstName,lastName);
-*/
-
-let submitButton=document.querySelector("#submit");
-
-submitButton.addEventListener("click",()=>{alert("button clicked!")});
