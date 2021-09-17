@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
+body {
+    font-family: 'Gluten', cursive;
+    margin: 0px;
+}
+
+:root {
+    --primary-color:#FAFF00;
+    --secondary-color:#000000
+}
+
+.header {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    border: 1px solid var(--secondary-color);
+}
