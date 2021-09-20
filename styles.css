@@ -1,38 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gluten&display=swap");
 
 body {
-    font-family: 'Gluten', cursive;
-    margin: 0px;
+  font-family: "Gluten", cursive;
+  margin: 0px;
 }
 
 :root {
-    --primary-color:#FAFF00;
-    --secondary-color:#000000
+  --primary-color: #faff00;
+  --secondary-color: #000000;
 }
 
 .header {
-    background-color: var(--primary-color);
-    text-align: center;
-    margin: 2rem 0rem;
-    padding: 2rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  border: 1px solid var(--secondary-color);
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 #message {
-    width:50%;
-    padding: 1rem;
-    border: 1px solid black;
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid black;
 }
 
 .output-text {
-    border: 1px solid black;
-    margin: auto;
-    width: 20%;
-    padding: 4rem;
+  border: 1px solid black;
+  margin: auto;
+  width: 20%;
+  padding: 4rem;
+}
+
+#get-message {
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  font-family: "Gluten", cursive;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+#footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  border: 1px solid var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
