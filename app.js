@@ -1,12 +1,24 @@
-let getMessageButton=document.getElementById("get-message");
+let messageInput = document.getElementById("message");
 
-let inputText=document.querySelector("#message");
+let getMessageBtn = document.querySelector("#get-message");
 
-let outputDiv=document.querySelector(".output-text");
+let outputMessage = document.querySelector(".output-text");
 
-getMessageButton.addEventListener("click",()=>{
-    outputDiv.innerText=inputText.value;
-})
+function generateUrl(text) {
+  return `https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=${text}`;
+}
 
-// console.log(inputText.innerHTML);
+let url = "";
 
+function fetchCall(link) {
+  fetch(link)
+    .then(response => response.json())
+    .then(json => console.log(json.contents.translated));
+}
+
+getMessageBtn.addEventListener("click", function () {
+  console.log("Input message: " + messageInput.value);
+  outputMessage.innerHTML = messageInput.value;
+  url = generateUrl(messageInput.value);
+  fetchCall(url);
+});
